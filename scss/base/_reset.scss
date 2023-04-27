@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Smokum&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color:#fec63d ;
+  font-size: 40px;
+  font-family: "Smokum", cursive;
+}
+
+.h1nos {
+  color: #fec63d;
+  font-size: 100px;
+  font-family: "Smokum", cursive;
+}
+
+h2 {
+  color: #fec63d;
+  font-size: 30px;
+  font-family: "Smokum", cursive;
+}
+
+p {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.btn {
+  display: flex;
+  margin: 30px;
+  font-size: 20px;
+  padding: 6px;
+  border-radius: 10px;
+  color: black;
+  background-color: #fec63d;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: black;
+  color: aliceblu;
+  display: flex;
+  transition: 0.5s;
+}
+
+.wsp {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+.wsp img {
+  width: 100px;
+  height: 100%;
+}

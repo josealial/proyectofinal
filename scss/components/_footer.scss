@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: $mainColor;
+    img {
+        padding: 5px;
+        margin: 8px;
+        gap: 40px;
+        position: static;
+        top: auto;
+        width: 50%;
+        height: 20%;
+
+    }
+  }
+  
+  .redes{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    a { 
+        text-decoration: none;
+        text-decoration-color: $mainColor;
+        color: black;
+        font-size: 35px
+     }
+  
+  }

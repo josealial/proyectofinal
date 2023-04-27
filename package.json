@@ -1,0 +1,15 @@
+{
+  "name": "proyecto-final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "josealial",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josealial/proyectofinal.git"
+  },
+  "description": "proyectofinal"
+}
