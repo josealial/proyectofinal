@@ -2,7 +2,7 @@
 /*main inicio*/
 .carrusel h5 {
     font-family: "Smokum", cursive;
-    color: $secondcolor;
+    color: $secondColor;
     background-color: rgba(240, 248, 255, 0.308);
     font-size: 50px;
   }
@@ -12,32 +12,54 @@
     background-color: rgba(240, 248, 255, 0.308);
     font-size: 30px;
   }
-  
   .grilla_index {
     padding: 100px;
-    background-color: $secondcolor;
+    background-color: $secondColor;
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     grid-template-rows: auto;
     gap: 25px;
   }
-  
-  .grilla_index img {
-    background-repeat: no-repeat;
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: $thirdColor;
+    object-fit: cover;
+    border-radius: 10px;
+    img{
+      background-repeat: no-repeat;
+      max-width: 100%;
+      max-height: 500px;
     background-size: cover;
     background-attachment: fixed;
     padding: 30px;
   }
+
+    }
   
-  /*main productos */
+  
+  
+  
+  /*main */
   main {
-    background-color: $secondcolor;
+    background: linear-gradient(
+      to right,
+      black,
+      #FFF7D4,
+      black
+      );
   }
+  body {
+    background-color: #FFF7D4;}
+
+ /*main catalogo*/
   
   .grilla {
     padding: 10px;
     margin: 50px;
-    background-color: $secondcolor;
+    background-color: $secondColor;
     display: grid;
     grid-template-columns: repeat(6, 6fr);
     grid-template-rows: auto;
@@ -46,27 +68,30 @@
     background-size: cover;
     background-attachment: fixed;
     padding: 30px;
+    border-radius: 10px;
   }
   
   .caja {
-    display: flex;
-    flex-direction: column;
+    @include flex(column,center,center);
     width: 100%;
     height: 100%;
-    background-color: $thirdcolor;
+    background-color: $thirdColor;
     object-fit: cover;
+    border-radius: 10px;
+    img{
+       max-width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 10px
+    }
   }
   
-  .caja img {
-    max-width: 100%;
-    height: 500px;
-    object-fit: cover;
-  }
+ 
   
-  /*main mi cuenta */
+  /*main login */
   .grillaform {
     padding: 10px;
-    background-color: $secondcolor;
+    background-color: $secondColor;
     display: grid;
     grid-template-columns: repeat(45%, 45%);
     grid-template-rows: auto;
@@ -75,6 +100,7 @@
     "area1 area2" 
     "area1 area2";
     gap: 5px;
+    border-radius: 10px;
   }
   
   .box1 {
@@ -87,9 +113,24 @@
     max-width: auto;
   }
   
+  form {
+    @include flex(column,center,center);
+   }
+  
   /*main nosotros */
+
+  .contnst{
+    background-color: $secondColor;
+    @include flex(column,space-between,baseline);
+    margin: 20px;
+    font-size: 30px;
+    padding: 6px;
+    border-radius: 10px;
+
+  }
+ 
   .grillanst {
-    background-origin: $secondcolor;
+    background-color: $secondColor;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -131,37 +172,11 @@
   
   /*main contacto */
   .cont {
-    flex-direction: column;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $secondcolor;
+    @include flex(column,space-between,center);
+    background-color: $secondColor;
     margin: 40px;
     font-size: 30px;
     padding: 6px;
     border-radius: 10px;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 25px;
-    margin: 50px;
-    font-size: 25px;
-    font-style: italic;
-  }
-  
-  .formularios h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .formularios h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+

@@ -1,12 +1,69 @@
 @media only screen and (max-width: 480px){
+  .navsup {
+        display: none;
+      }
+      
+  .grilla_index {
+        padding: 100px;
+        background-color: $secondColor;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: auto;
+        gap: 25px;
+      }
+  nav li {
+    @include flex(column,center,center)
+    }    
+ 
+  .redes{
+   @include flex(column,center,center)
+    
+  }
+ 
+      
+    
+
 
 }
 @media only screen and (max-width: 660px){
+  .navsup {
+    display:none ;
+  }
+      
 
 }
+
 @media only screen and (max-width: 850px){
-  
+  .navsup {
+    display:none ;
+  }
+  nav li{
+    @include flex(column,center,center)
+   
+  }
+  .grilla_index {
+    padding: 100px;
+    background-color: $secondColor;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto;
+    gap: 25px;
+  }
+  .grillanst{
+    @include flex(column,center,center);
+  }
+ 
+ 
 }
 @media only screen and (max-width: 1110px){
+  .grilla{
+    @include flex(column,center,center);
+  }
   
 } 
+@media only screen and (max-width: 1140px){
+  .navsup {
+    display:none ;
+  }
+
+}

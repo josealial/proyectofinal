@@ -5,7 +5,12 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    background-color: $mainColor;
+    background: linear-gradient(
+      to right,
+      black,
+      #fec63d,
+      black
+      );
     img {
         padding: 5px;
         margin: 8px;
@@ -14,13 +19,15 @@ footer {
         top: auto;
         width: 50%;
         height: 20%;
-
-    }
+      }
+      p{
+        @include flex(column,center,center);
+      }
   }
   
   .redes{
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     align-items: center;
     a { 
         text-decoration: none;

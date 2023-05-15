@@ -9,8 +9,12 @@
   }
   
   header {
-    background-color: $mainColor;
-    
+    background: linear-gradient(
+      to right,
+      black,
+      #fec63d,
+      black
+      );
   }
   .logo{
     display: flex;
@@ -25,18 +29,24 @@
   }
   
   nav {
-    background-color: $mainColor;
-    font-style: italic;
+    background: linear-gradient(
+      to right,
+      black,
+      #fec63d,
+      black
+      );
+    font-style: $thirdColor;
     font-size: 20px;
     padding: 10px;
     
     li {
+      @include flex(row,space-between,center);
         flex-direction: row;
         display: inline-flex;
         justify-content: space-between;
         align-items: center;
         color: black;
-        background-color: aliceblu;
+        background-color:$thirdColor;
         margin: 40px;
         font-size: 30px;
         padding: 6px;
@@ -47,7 +57,6 @@
   .nav-link:hover {
     background-color: aliceblu;
     color: $mainColor;
-    display:grid;
     transition: 0.5s;
   }
   
